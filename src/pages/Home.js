@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'reactstrap'
 import Navbar from '../components/Navbar'
 
 import chefsito from '../imgs/chefsito.png'
@@ -14,7 +15,7 @@ const Home = () => {
             <Navbar />
             <div className='home_info'>
                 <div className='home_text'>
-                    creatividad
+                    Creatividad
                 </div>
                 <div className='home_img'>
                     <img src={chefsito} alt='chefsito'/>
@@ -48,6 +49,7 @@ const Home = () => {
                         cocina, preparando recetas fáciles con <br/>
                         ingredientes simples o liberando tu <br/>
                         mente para explorar nuevos sabores.</p>
+                        <Button color="warning">COMIENZA AHORA</Button>
                     </div>
                 </div>
             </div>
