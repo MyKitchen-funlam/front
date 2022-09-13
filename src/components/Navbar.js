@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
 
 import '../styles/navbar.css'
 
 const Navbar = () => {
+
+    const { loginWithRedirect } = useAuth0();
+    
   return (
     <>
         <nav className="navbar navbar-expand-lg">
@@ -18,10 +22,10 @@ const Navbar = () => {
                             <Link className="nav-link" aria-current="page" to="#">NOSOTROS</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">REGISTRARSE</Link>
+                            <Link className="nav-link" to="/registrarse">REGISTRARSE</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">INICIAR SESIÓN</Link>
+                            <button onClick={() => loginWithRedirect()}>Log In</button>
                         </li>
                     </ul>
                 </div>
