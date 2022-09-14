@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from 'reactstrap'
-import Navbar from '../components/Navbar'
+import { Element, Link } from 'react-scroll'
+import { useAuth0 } from '@auth0/auth0-react'
 
 import chefsito from '../imgs/chefsito.png'
 import img_aprende from '../imgs/img_aprende.png'
@@ -9,10 +10,33 @@ import img_enseña from '../imgs/img_enseña.png'
 import '../styles/home.css'
 
 const Home = () => {
+
+    const { loginWithRedirect } = useAuth0();
+
   return (
     <>
+        <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/">MyKitchen</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="home_2"><button className='content-text__btn'>Nosotros</button></Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/registrarse">REGISTRARSE</Link>
+                        </li>
+                        <li className="nav-item">
+                             <Link className='nav-link'><button className='content-text__btn' onClick={() => loginWithRedirect()}>Log In</button></Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <section className='home'>
-            <Navbar />
             <div className='home_info'>
                 <div className='home_text'>
                     Creatividad
@@ -25,7 +49,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className='home_2'>
+        <Element className='home_2'>
             <div className='home_2_text'>
                 <div className='text_aprende'>
                     <div className='info_aprender'>
@@ -53,7 +77,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Element>
     </>
   )
 }
