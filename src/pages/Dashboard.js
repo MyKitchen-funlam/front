@@ -18,10 +18,31 @@ const Dashboard = () => {
       </div>
       <div className='botones'>
         <div className='button-buscar'>
-          <button class="btn btn-warning">Buscar receta</button>
+          <button className="btn btn-warning">Buscar receta</button>
         </div>
         <div className='button-crear'>
-          <button class="btn btn-warning">Crear receta</button>
+          <button className="btn btn-warning">Crear receta</button>
+        </div>
+      </div>
+    </div>
+    <div className='square-recipes'>
+      <div className='square-text'>
+        <div className='text_recipes'>
+          <h3>Historial</h3>
+          <div className='historial'>
+            <div className='text-historial'>
+              <p>Historial al que se le dio click</p>
+            </div>
+            <div className='text-historial'>
+              <p>Historial al que se le dio click</p>
+            </div>
+            <div className='text-historial'>
+              <p>Historial al que se le dio click</p>
+            </div>
+            <div className='text-historial'>
+              <p>Historial al que se le dio click</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

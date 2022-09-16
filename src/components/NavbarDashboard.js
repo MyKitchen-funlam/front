@@ -20,14 +20,14 @@ const NavbarDashboard = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <form class="d-flex">
+                            <form className="d-flex">
                                 <input
-                                    class="form-control me-2"
+                                    className="form-control me-2"
                                     type="search"
                                     placeholder="Buscar"
                                     aria-label="Search" 
                                 />
-                                <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                                <button className="btn btn-outline-warning" type="submit">Buscar</button>
                             </form>
                         </li>
                     </ul>
