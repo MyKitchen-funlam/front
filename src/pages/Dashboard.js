@@ -4,6 +4,7 @@ import NavbarDashboard from '../components/NavbarDashboard'
 import { HiUsers } from 'react-icons/hi'
 
 import '../styles/dashboard.css'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
 
@@ -18,10 +19,10 @@ const Dashboard = () => {
       </div>
       <div className='botones'>
         <div className='button-buscar'>
-          <button className="btn btn-warning">Buscar receta</button>
+          <Link to='/buscar-recetas'><button className="btn btn-warning">Buscar receta</button></Link>
         </div>
         <div className='button-crear'>
-          <button className="btn btn-warning">Crear receta</button>
+          <Link to='/mis-receteas/crear%receta'><button className="btn btn-warning">Crear receta</button></Link>
         </div>
       </div>
     </div>

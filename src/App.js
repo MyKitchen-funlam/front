@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import IniciarSesion from './pages/IniciarSesion';
 import Registrar from './pages/Registrar';
 import Dashboard from './pages/Dashboard';
+import Recetas from './pages/Recetas';
+import CrearRecetas from './pages/CrearRecetas';
+import BuscarRecetas from './pages/BuscarRecetas';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path='/registrarse' element={<Registrar />} />
           <Route path='/iniciar-sesion' element={<IniciarSesion/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/mis-recetas' element={<Recetas/>} />
+          <Route path='/mis-receteas/crear%receta' element={<CrearRecetas/>} />
+          <Route path='buscar-recetas' element={<BuscarRecetas/>} />
         </Routes>
       </Router>
     </div>
