@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ccec34cb.css",
+    "main.js": "/static/js/main.c73cb894.js",
+    "static/js/787.71df535f.chunk.js": "/static/js/787.71df535f.chunk.js",
+    "static/media/img_aprende.png": "/static/media/img_aprende.ba5ce72a88a252949fa8.png",
+    "static/media/img_enseña.png": "/static/media/img_enseña.c8100cf5df73042e64de.png",
+    "static/media/chefsito.png": "/static/media/chefsito.65b55b86baee259eef60.png",
+    "index.html": "/index.html",
+    "main.ccec34cb.css.map": "/static/css/main.ccec34cb.css.map",
+    "main.c73cb894.js.map": "/static/js/main.c73cb894.js.map",
+    "787.71df535f.chunk.js.map": "/static/js/787.71df535f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccec34cb.css",
+    "static/js/main.c73cb894.js"
+  ]
+}
