@@ -1,7 +1,8 @@
 import React from 'react'
-import { Button } from 'reactstrap'
 import { Element, Link } from 'react-scroll'
 import { useAuth0 } from '@auth0/auth0-react'
+import Button from '@mui/material/Button'
+import Stack from '@mui/material/Stack'
 
 import chefsito from '../imgs/chefsito.png'
 import img_aprende from '../imgs/img_aprende.png'
@@ -24,13 +25,13 @@ const Home = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="home_2"><button className='content-text__btn'>Nosotros</button></Link>
+                            <Link className="nav-link" aria-current="page" to="home_2"><Button className='content-text__btn'>Nosotros</Button></Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/registrarse">REGISTRARSE</Link>
                         </li>
                         <li className="nav-item">
-                             <Link className='nav-link'><button className='content-text__btn' onClick={() => loginWithRedirect()}>Log In</button></Link>
+                             <Link className='nav-link'><Button className='content-text__btn' onClick={() => loginWithRedirect()}>Log In</Button></Link>
                         </li>
                     </ul>
                 </div>
