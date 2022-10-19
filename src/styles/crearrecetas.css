@@ -29,7 +29,6 @@
 
 .textarea__name{
     display: flex;
-
 }
 
 .txfld_nombre{
@@ -39,7 +38,6 @@
 
 .textarea__ingredients{
     display: flex;
-
 }
 
 .txfld_ingredientes1{
@@ -58,6 +56,5 @@
 }
 
 .buttons{
-    display: flex;
-    align-items: flex-end;
+    align-items: flex-end
 }

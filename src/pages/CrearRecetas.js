@@ -3,8 +3,17 @@ import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import NavbarRecetas from '../components/NavbarRecetas'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import '../styles/crearrecetas.css'
+
+const theme = createTheme({
+  palette: {
+    secondary: {
+      main: '#fafafa',
+    },
+  },
+});
 
 const CrearRecetas = () => {
   return (
@@ -65,8 +74,10 @@ const CrearRecetas = () => {
               </Box>
             </div>
             <div className='buttons'>
-              <Button variant="outlined">ACEPTAR</Button>
-              <Button variant="contained" color="error">CANCELA</Button>
+              <ThemeProvider theme={theme}>
+                <Button variant="contained" color='secondary'>ACEPTAR</Button>
+              </ThemeProvider>
+              <Button className='ml-3' variant="contained" color="error">CANCELA</Button>
             </div>
           </div>
         </div>
