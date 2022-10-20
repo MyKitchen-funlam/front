@@ -19,10 +19,10 @@ const Dashboard = () => {
       </div>
       <div className='botones'>
         <div className='button-buscar'>
-          <Link to='/buscar-recetas'><button className="btn btn-warning">Buscar receta</button></Link>
+          <Link to='/dashboard/buscar-recetas'><button className="btn btn-warning">Buscar receta</button></Link>
         </div>
         <div className='button-crear'>
-          <Link to='/mis-receteas/crear%receta'><button className="btn btn-warning">Crear receta</button></Link>
+          <Link to='/dashboard/mis-receteas/crear%receta' className='but_crear'><button className="btn btn-warning">Crear receta</button></Link>
         </div>
       </div>
     </div>

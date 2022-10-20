@@ -14,7 +14,7 @@ function App() {
     <Auth0Provider
     domain="mykitchen-funlam.us.auth0.com"
     clientId="dFd9kG4l8s7FqZrV3AFGrDfnoB73U27H"
-    redirectUri={'https://jesusrestrepo-mykitchen-funlam-front-p6rj6q7g45qhr4gw-3000.githubpreview.dev/dashboard'}
+    redirectUri={'https://jesusrestrepo-mykitchen-funlam-front-v5v657pg79rhp647-3000.githubpreview.dev/dashboard'}
   >
     <div>
       <Router>
@@ -23,9 +23,9 @@ function App() {
           <Route path='/registrarse' element={<Registrar />} />
           <Route path='/iniciar-sesion' element={<IniciarSesion/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
-          <Route path='/mis-recetas' element={<Recetas/>} />
-          <Route path='/mis-receteas/crear%receta' element={<CrearRecetas/>} />
-          <Route path='buscar-recetas' element={<BuscarRecetas/>} />
+          <Route path='/dashboard/mis-recetas' element={<Recetas/>} />
+          <Route path='/dashboard/mis-receteas/crear%receta' element={<CrearRecetas/>} />
+          <Route path='/dashboard/buscar-recetas' element={<BuscarRecetas/>} />
         </Routes>
       </Router>
     </div>

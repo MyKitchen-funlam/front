@@ -8,6 +8,10 @@ body{
     padding: 0;
 }
 
+.navbar-collapse{
+    flex-grow: 0;
+}
+
 section{
     margin: 0;
     background-color: #EC1C25;
@@ -16,6 +20,10 @@ section{
     color: white;
     text-align: center;
     position: relative;
+}
+
+.Button{
+    color: black;
 }
 
 .home_info{

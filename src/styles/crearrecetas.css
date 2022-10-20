@@ -10,7 +10,8 @@
 .info__crear{
     background-color: #DEDA2A;
     width: 55%;
-    height: 45%;
+    height: auto;
+    padding-bottom: 5%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,4 +23,38 @@
 .info__crear_text{
     width: 70%;
     height: 80%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.textarea__name{
+    display: flex;
+}
+
+.txfld_nombre{
+    background-color: white;
+    padding: 0;
+}
+
+.textarea__ingredients{
+    display: flex;
+}
+
+.txfld_ingredientes1{
+    background-color: white;
+    padding: 0;
+}
+
+.textarea__steps{
+    display: flex;
+
+}
+
+.txfld_pasos{
+    background-color: white;
+    padding: 0;
+}
+
+.buttons{
+    align-items: flex-end
 }

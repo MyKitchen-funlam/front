@@ -1,13 +1,22 @@
 import React from 'react'
-import { Button } from 'reactstrap'
 import { Element, Link } from 'react-scroll'
 import { useAuth0 } from '@auth0/auth0-react'
+import Button from '@mui/material/Button'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import chefsito from '../imgs/chefsito.png'
 import img_aprende from '../imgs/img_aprende.png'
 import img_enseña from '../imgs/img_enseña.png'
 
 import '../styles/home.css'
+
+const theme = createTheme({
+    palette: {
+      secondary: {
+        main: '#212121',
+      },
+    },
+  });
 
 const Home = () => {
 
@@ -24,13 +33,14 @@ const Home = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="home_2"><button className='content-text__btn'>Nosotros</button></Link>
+                            <ThemeProvider theme={theme}>
+                                <Link className="nav-link" aria-current="page" to="home_2"><Button variant='text' color='secondary' className='content-text__btn'>Nosotros</Button></Link>
+                            </ThemeProvider>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/registrarse">REGISTRARSE</Link>
-                        </li>
-                        <li className="nav-item">
-                             <Link className='nav-link'><button className='content-text__btn' onClick={() => loginWithRedirect()}>Log In</button></Link>
+                            <ThemeProvider theme={theme}>
+                                <Link className='nav-link'><Button variant="text" color='secondary' className='content-text__btn' onClick={() => loginWithRedirect()}>Log In</Button></Link>
+                            </ThemeProvider>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +83,7 @@ const Home = () => {
                         cocina, preparando recetas fáciles con <br/>
                         ingredientes simples o liberando tu <br/>
                         mente para explorar nuevos sabores.</p>
-                        <Button color="warning">COMIENZA AHORA</Button>
+                        <Button variant="contained" color="warning">COMIENZA AHORA</Button>
                     </div>
                 </div>
             </div>
