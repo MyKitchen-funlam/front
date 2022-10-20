@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
@@ -77,7 +78,7 @@ const CrearRecetas = () => {
               <ThemeProvider theme={theme}>
                 <Button variant="contained" color='secondary'>ACEPTAR</Button>
               </ThemeProvider>
-              <Button className='ml-3' variant="contained" color="error">CANCELA</Button>
+              <Link to='/dashboard'><Button className='ml-3' variant="contained" color="error">CANCELAR</Button></Link>
             </div>
           </div>
         </div>

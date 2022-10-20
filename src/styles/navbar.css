@@ -8,3 +8,25 @@
 .card{
     height: auto;
 }
+
+.navbar ul ul {
+    display: none;
+    background-color: #D51C25;
+    border-radius: 7%;
+}
+
+.navbar ul ul li {
+    width: 150px;
+    list-style: none;
+    left: 0;
+}
+
+.navbar ul ul a{
+    line-height: 120%;
+    padding:10px 15px;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+    position:absolute;
+}

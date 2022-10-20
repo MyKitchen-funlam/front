@@ -23,9 +23,9 @@ function App() {
           <Route path='/registrarse' element={<Registrar />} />
           <Route path='/iniciar-sesion' element={<IniciarSesion/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
-          <Route path='/mis-recetas' element={<Recetas/>} />
-          <Route path='/mis-receteas/crear%receta' element={<CrearRecetas/>} />
-          <Route path='buscar-recetas' element={<BuscarRecetas/>} />
+          <Route path='/dashboard/mis-recetas' element={<Recetas/>} />
+          <Route path='/dashboard/mis-receteas/crear%receta' element={<CrearRecetas/>} />
+          <Route path='/dashboard/buscar-recetas' element={<BuscarRecetas/>} />
         </Routes>
       </Router>
     </div>

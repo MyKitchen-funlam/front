@@ -1,8 +1,14 @@
 import React from 'react'
 
+import '../styles/buscarrecetas.css'
+
 const BuscarRecetas = () => {
   return (
-    <div>BuscarRecetas</div>
+    <>
+      <section className='background_buscar'>
+
+      </section>
+    </>
   )
 }
 
