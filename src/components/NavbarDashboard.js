@@ -34,9 +34,6 @@ const NavbarDashboard = () => {
                             <li className='nav-item'>
                                 <Link to='/dashboard/mis-recetas' className='nav-link'>Mis recetas  <FaUserAlt/></Link>
                             </li>
-                            <li className='nav-item'>
-                                <Link to='/mis-recetas' className='nav-link'>Historial  <FaHistory/></Link>
-                            </li>
                         </ul>
                     </li>
                 </ul>
