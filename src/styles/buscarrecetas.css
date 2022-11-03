@@ -2,4 +2,44 @@
     width: 100%;
     height: 100vh;
     background-color: #EC1C25;
+    display: flex;
+    align-items: center;
+}
+
+.search__recipes{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.ingredientes_seleccionados{
+    width: 20%;
+    background-color: white;
+    color:black;
+    flex: auto;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.seleccion_ingredientes_y_muestra{
+    width: 60%;
+    color:black;
+    flex: auto;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+.titulo_recetas{
+    color: #EC1C25;
+}
+
+.seleccion{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.buscar{
+    width: 50%;
+    background-color: #DEDA2A;
+    border-radius: 60px;
 }
