@@ -7,9 +7,7 @@
 }
 
 .search__recipes{
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
+    width: 100%;
 }
 
 .ingredientes_seleccionados{
@@ -19,14 +17,6 @@
     flex: auto;
     padding: 2%;
     border-radius: 5%;
-}
-
-.seleccion_ingredientes_y_muestra{
-    width: 60%;
-    color:black;
-    flex: auto;
-    margin-left: 10%;
-    padding: 2%;
 }
 
 .titulo_recetas{
@@ -39,7 +29,20 @@
 }
 
 .buscar{
-    width: 50%;
+    width: 80%;
+    margin-left: 10%;
     background-color: #DEDA2A;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.result{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: auto;
+    color: black;
     border-radius: 60px;
 }
