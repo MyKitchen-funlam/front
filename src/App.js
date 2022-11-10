@@ -9,6 +9,7 @@ import Recetas from './pages/Recetas';
 import CrearRecetas from './pages/CrearRecetas';
 import BuscarRecetas from './pages/BuscarRecetas';
 import EditarUsuario from './pages/EditarUsuario';
+import RecetaSeleccionada from './pages/RecetaSeleccionada'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/dashboard/mis-recetas' element={<Recetas/>} />
           <Route path='/dashboard/mis-receteas/crear%receta' element={<CrearRecetas/>} />
           <Route path='/dashboard/buscar-recetas' element={<BuscarRecetas/>} />
+          <Route path='/dashboard/buscar-recetas/:id' element={<RecetaSeleccionada/>} />
           <Route path='/dashboard/editar-usuario' element={<EditarUsuario/>} />
         </Routes>
       </Router>

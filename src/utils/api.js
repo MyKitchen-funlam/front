@@ -15,3 +15,14 @@ export const obtenerRecetas = async (ingredientes) => {
   }
   
 };
+
+export const RecetaElegida = async (id, successCallback, errorCallback) => {
+  const options = {
+      method: 'GET',
+      headers: { 'content-Type': 'application/json' },
+      url: `http://localhost:5000/recetas/${id}`,
+    };
+    await axios.request(options)
+    .then(successCallback)
+    .catch(errorCallback);
+};

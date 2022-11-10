@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { obtenerRecetas } from '../utils/api'
+import { Link } from 'react-router-dom'
+import { nanoid } from 'nanoid'
 
 import '../styles/buscarrecetas.css'
 
 const BuscarRecetas = () => {
 
   const [ingredientes, setIngredientes] = useState("");
-
+  const [ejecutarConsulta, setEjecutarConsulta] = useState(true);
   const [recetas, setRecetas] = useState([]);
 
   const handleChange = (e) => {
@@ -59,9 +61,11 @@ const BuscarRecetas = () => {
           </div>
           <div>
             {recetas.map(
-              ( receta ) => (
+              ( recetas ) => (
                 <div  className="result">
-                  <h3>{receta.nombre}</h3>
+                  <Link to={`/dashboard/buscar-recetas/id=${recetas._id}`}>
+                    <DatoReceta key={nanoid()} recetas={recetas} setEjecutarConsulta={setEjecutarConsulta} />
+                  </Link>
                 </div>
               )
             )}
@@ -69,6 +73,16 @@ const BuscarRecetas = () => {
         </div>
       </section>
     </>
+  )
+}
+
+const DatoReceta = ({ recetas }) => {
+  console.log('id desde datoproducto: ', recetas._id);
+
+  return (
+      <>
+        <h3>{recetas.nombre}</h3>
+      </>
   )
 }
 

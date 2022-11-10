@@ -3,13 +3,24 @@ import { Link } from 'react-router-dom'
 import { FaUserAlt, FaHistory } from 'react-icons/fa'
 import { AiFillSetting } from "react-icons/ai"
 import { useAuth0 } from "@auth0/auth0-react"
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import Button from '@mui/material/Button'
 
 import '../styles/navbar.css'
 
 
 const NavbarDashboard = () => {
 
+    const theme = createTheme({
+        palette: {
+          secondary: {
+            main: '#212121',
+          },
+        },
+      });
+
     const { user, isAuthenticated, isLoading} = useAuth0();
+    const { logout } = useAuth0();
 
     if (isLoading){
         return <div>Loading...</div>
@@ -30,11 +41,6 @@ const NavbarDashboard = () => {
                                 <a className="nav-link"><FaUserAlt size='2em'/>  username</a>
                             </>
                         )}
-                        <ul>
-                            <li className='nav-item'>
-                                <Link to='/dashboard/mis-recetas' className='nav-link'>Mis recetas  <FaUserAlt/></Link>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +62,11 @@ const NavbarDashboard = () => {
                     </ul>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link"><AiFillSetting size='2em'/></a>
-                            <ul>
-                                <li className='nav-item'>
-                                    <Link to='/dashboard/mis-recetas' className='nav-link'>Mis recetas  <FaUserAlt/></Link>
-                                </li>
-                                <li className='nav-item'>
-                                    <Link to='/mis-recetas' className='nav-link'>Historial  <FaHistory/></Link>
-                                </li>
-                            </ul>
+                            <ThemeProvider theme={theme}>
+                                <Button color='secondary' onClick={() => logout({ returnTo: window.location.origin })}>
+                                    Log Out
+                                </Button>
+                            </ThemeProvider>
                         </li>
                     </ul>
                 </div>
