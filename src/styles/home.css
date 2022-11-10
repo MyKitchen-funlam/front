@@ -105,3 +105,48 @@ section{
 .enseña{
     text-align: center;
 }
+
+@media screen and (max-width:950px) {
+
+    .home_info{
+        display: block;
+        width: 100%;
+    }
+
+    .home_text{
+        flex: none;
+    }
+
+    .home_img{
+        flex: none;
+        height: 40%;
+    }
+
+    .home_text_2{
+        flex: none;
+    }
+
+    .home_2_text{
+        transform: none;
+        left: 0;
+        top: 0;
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .text_aprende{
+        display: block;
+    }
+
+    .text_enseña{
+        display: block;
+    }
+
+    .home_2{
+        height: auto;
+        padding-bottom: 10%;
+    }
+
+}

@@ -15,7 +15,7 @@ function App() {
     <Auth0Provider
     domain="mykitchen-funlam.us.auth0.com"
     clientId="dFd9kG4l8s7FqZrV3AFGrDfnoB73U27H"
-    redirectUri={'https://jesusrestrepo-mykitchen-funlam-front-59qg9pv4pxp2pgr4-3000.githubpreview.dev/dashboard'}
+    redirectUri={'https://jesusrestrepo-mykitchen-funlam-front-x4w54qr9gg7h9q6j-3000.preview.app.github.dev/dashboard'}
   >
     <div>
       <Router>
