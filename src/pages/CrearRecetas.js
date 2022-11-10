@@ -89,7 +89,7 @@ const CrearRecetas = () => {
                   autoComplete="off"
                 >
                   <h3>Ingredientes: </h3>
-                  <TextField type='text' id="ingredientes" name='ingredientes' variant="outlined" className='txfld_ingredientes1' size='small' fullWidth onChange={handleChange} />
+                  <TextField type='text' id="ingredientes" name='ingredientes' multiline variant="outlined" className='txfld_ingredientes1' size='small' fullWidth onChange={handleChange} />
                 </Box>
                 <Box className='textarea__steps'
                   component="form"

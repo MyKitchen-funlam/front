@@ -1,5 +1,4 @@
 import React from 'react'
-import { useAuth0 } from '@auth0/auth0-react'
 import NavbarDashboard from '../components/NavbarDashboard'
 import { HiUsers } from 'react-icons/hi'
 
@@ -7,8 +6,6 @@ import '../styles/dashboard.css'
 import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
-
-    const { logout } = useAuth0();
 
   return (
     <>
@@ -26,30 +23,6 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
-    <div className='square-recipes'>
-      <div className='square-text'>
-        <div className='text_recipes'>
-          <h3>Historial</h3>
-          <div className='historial'>
-            <div className='text-historial'>
-              <p>Historial al que se le dio click</p>
-            </div>
-            <div className='text-historial'>
-              <p>Historial al que se le dio click</p>
-            </div>
-            <div className='text-historial'>
-              <p>Historial al que se le dio click</p>
-            </div>
-            <div className='text-historial'>
-              <p>Historial al que se le dio click</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onClick={() => logout({ returnTo: window.location.origin })}>
-      Log Out
-    </button>
     </>
   )
 }
